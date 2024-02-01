@@ -6,3 +6,6 @@ https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2
 https://app.datawars.io/dashboard
 https://www.datacamp.com/
 https://youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT&si=eZHVcW5ZMIAAbYcs
+
+
+npx tailwindcss build -o output.css
