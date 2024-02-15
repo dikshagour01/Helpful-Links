@@ -6,24 +6,39 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./output.css">
+    <style>
+        .btn {
+    padding: 16px 30px;
+    margin-bottom: 100px;
+    height: 110px;
+    width: 360px;
+    background-color: hsl(237, 72%, 13%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow for the glow effect */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+    </style>
 </head>
 <body>
-    <nav class=" h-14 bg-custom ">
-        <ul class=" flex justify-center mx-auto mt-7 font-mono font-semibold text-lg">
-            <li class="mr-6">Web D</li>
-            <li class="mr-6">Data Science</li>
-            <li class="mr-6">Machine Learning</li>
-            <li class="mr-6">Courses</li>
-        </ul>
-    </nav>
     
-    <div class="h-screen bg-d flex items-center justify-center">
-        <div class="h-72 w-9/12 bg-custom mb-52">
-            <div class="flex items-center mt-16 justify-center font-mono font-bold text-9xl">
-                Helpful Links
-            </div>
+    <div class="bg-cover bg-center bg-no-repeat h-screen relative" style="background-image: url('1125.jpg')">
+        <div class="flex justify-center">
+            <h1 class=" mt-5 text-5xl text-white font-bold tracking-wide text-shadow-lg"> Helpful Links</h1>
         </div>
+            <div class="flex justify-evenly mt-20">
+                <div class="">
+                    <a href="#" class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-blue-600 hover:text-white">DSA</a>
+                    <a href="#" class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-blue-600 hover:text-white mt-4">DS / ML</a>
+                    <a href="#" class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-blue-600 hover:text-white mt-4">Miscellaneous</a>
+                </div>
+                <div>
+                    <a href="#" class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-blue-600 hover:text-white">Web Development</a>
+                    <a href="#" class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-blue-600 hover:text-white mt-4">Other Links</a>
+                    <a href="#" class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-blue-600 hover:text-white mt-4">Courses</a>
+                </div>
+            </div>
     </div>
-    
 </body>
 </html>
