@@ -6,21 +6,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./output.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Micro+5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Madimi+One&family=Micro+5&family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
 
         .btn {
     padding: 16px 30px;
     margin-bottom: 100px;
     height: 140px;
-    width: 400px;
+    width: 510px;
     background-color: hsl(237, 72%, 13%);
     color: white;
     border: none;
     border-radius: 8px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow for the glow effect */
     transition: all 0.3s ease; /* Smooth transition effect */
+    font-family: "Press Start 2P", system-ui;
 }
+
+.name{
+    font-family: "Press Start 2P", system-ui;
+}
+
+
 @media (max-width: 768px) {
             .main-bg{
                 height: 100vh;
@@ -32,12 +41,19 @@
             }
 
             .btn {
-                width: 350px; /* Make buttons full width */
+                width: 440px; /* Make buttons full width */
                 margin-bottom: 45px; /* Adjust margin for better spacing */
                 height: auto; /* Allow height to adjust based on content */
                 padding: 12px 24px; /* Adjusted padding for smaller buttons */
                 font-size: 2rem; /* Adjusted font size for smaller screens */
                 
+            }
+
+            .name{
+                font-size: 2rem;
+                display: flex; /* Make .name a flex container */
+                justify-content: center;
+                align-items: center;
             }
         }
 
@@ -47,7 +63,7 @@
     
     <div class=" main-bg bg-cover bg-center bg-no-repeat h-screen relative" style="background-image: url('1125.jpg')">
         <div class="flex justify-center">
-            <h1 class=" mt-5 text-5xl text-white font-bold tracking-wide text-shadow-lg"> Helpful Links</h1>
+            <h1 class=" name mt-5 text-5xl text-white font-bold tracking-wide text-shadow-lg"> Helpful Links</h1>
         </div>
             <div class=" main flex justify-evenly mt-20">
                 <div class="">
