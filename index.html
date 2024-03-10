@@ -12,50 +12,53 @@
     <style>
 
         .btn {
-            padding: 16px 30px;
-            margin-bottom: 2vh; /* Using viewport height unit */
-            height: 140px;
-            width: 50vw; /* Using viewport width unit */
-            max-width: 500px; /* Limiting maximum width */
-            background-color: hsl(237, 72%, 13%);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow for the glow effect */
-            transition: all 0.3s ease; /* Smooth transition effect */
-            font-family: "Press Start 2P", system-ui;
-        }
+    padding: 16px 30px;
+    margin-bottom: 100px;
+    height: 140px;
+    width: 500px;
+    background-color: hsl(237, 72%, 13%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow for the glow effect */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    font-family: "Press Start 2P", system-ui;
+}
 
-        .name {
-            font-family: "Press Start 2P", system-ui;
-        }
+.name{
+    font-family: "Press Start 2P", system-ui;
+}
 
-        .main-bg {
-            height: 100vh; /* Set default height to full viewport height */
-            width: 100vw; /* Set default width to full viewport width */
-            background-image: url('1125.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        }
+.main-bg{
+    height: 100vh; /* Set default height to full viewport height */
+    width: 100vw; /* Set default width to full viewport width */
+}
 
-        .main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%; /* Filling parent's height */
-            padding-top: 20vh; /* Adding padding instead of margin */
-        }
-
-        @media (max-width: 768px) {
-            .btn {
-                width: 80vw; /* Adjusting button width for smaller screens */
+@media (max-width: 768px) {
+            .main-bg{
+                height: 100vh;
+                width: 100vw;
+            }
+            .main {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center;
             }
 
-            .name {
+            .btn {
+                width: 440px; /* Make buttons full width */
+                height: 220px;
+                margin-bottom: 45px; /* Adjust margin for better spacing */
+                height: auto; /* Allow height to adjust based on content */
+                padding: 12px 24px; /* Adjusted padding for smaller buttons */
+                font-size: 2rem; /* Adjusted font size for smaller screens */
+                
+            }
+
+            .name{
                 font-size: 2rem;
+                display: flex; /* Make .name a flex container */
+                justify-content: center;
+                align-items: center;
             }
         }
 
@@ -63,22 +66,22 @@
 </head>
 <body>
     
-    <div class="main-bg">
-        <div class="main">
+    <div class="main-bg bg-cover bg-center bg-no-repeat h-screen relative" style="background-image: url('1125.jpg')">
+        <div class="flex justify-center">
             <h1 class="name mt-5 text-5xl text-white font-bold tracking-wide text-shadow-lg"> Helpful Links</h1>
-            <div class="flex justify-evenly mt-10">
+        </div>
+            <div class="main flex justify-evenly mt-20">
                 <div>
-                    <button class="btn rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black">DSA</button>
-                    <button class="btn rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black mt-4">DS / ML</button>
-                    <button class="btn rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black mt-4">Miscellaneous</button>
+                    <button class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black">DSA</button>
+                    <button  class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black mt-4">DS / ML</button>
+                    <button  class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black mt-4">Miscellaneous</button>
                 </div>
                 <div>
-                    <button class="web-dev btn rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black"><a href="dev.html">Web Development</a></button>
-                    <button class="btn rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black mt-4">Other Links</button>
-                    <button class="btn rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black mt-4">Courses</button>
+                    <button class="web-dev btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black"><a href="dev.html">Web Development</a></button>
+                    <button class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black mt-4">Other Links</button>
+                    <button class="btn block py-2 px-4 rounded bg-blue-500 text-white font-bold text-4xl text-center hover:bg-white hover:text-black mt-4">Courses</button>
                 </div>
             </div>
-        </div>
     </div>
 </body>
 </html>
