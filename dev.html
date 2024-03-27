@@ -14,16 +14,70 @@
         .main-dev{
             font-family: "Press Start 2P", system-ui;
         }
+
+        .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align items vertically */
+    align-items: center; /* Center align items horizontally */
+    }
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Adjust the gap between buttons */
+    margin-top: 10px; /* Adjust the top margin */
+    padding: 35px;
+}
+
+.custom-button {
+    width: 590px; /* Adjust width and height as needed */
+    height: 180px;
+    background-image: url('./pngwing.com.png');
+    background-size: cover; /* or contain, depending on how you want the image to fit */
+    /* Other button styling */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-text {
+    font-size: 25px;
+    letter-spacing: 2px; /* Adjust letter spacing for better readability */
+    text-transform: uppercase; /* Convert text to uppercase */
+    /* Add any other desired styles to make it attractive */
+}
+
+
     </style>
 </head>
 <body>
-    <div class=" main-dev bg-cover bg-center bg-no-repeat h-screen relative" style="background-image: url('./2302.w030.n003.561A.p1.561.jpg')">
+    <div class="main-dev bg-cover bg-center bg-no-repeat h-screen relative" style="background-image: url('./2302.w030.n003.561A.p1.561.jpg')">
         <div class="flex justify-center">
-            <h1 class=" name mt-5 text-5xl text-white font-bold tracking-wide text-shadow-lg">Web Development</h1>
+            <h1 class="name mt-5 text-5xl text-white font-bold tracking-wide text-shadow-lg">Web Development</h1>
         </div>
         <div class="dev-roadmap">
             <a href="https://roadmap.sh/full-stack">FULL STACK ROADMAP</a>
         </div>
+        <div class="main flex flex-column justify-center items-center mt-20">
+            <div class="button-group">
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w">Code With Harry</a></button>
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD">CodeHelp-by love babbar</a></button>
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/playlist?list=PL9ooVrP1hQOEloRCBI97ZXkWUg6MJn0Yf"> Edureka</a></button>
+            </div>
+            <div class="button-group">
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/playlist?list=PLgWjD_CBfh0Bh9-CvRE1dIhxKsUpmx3Gj">Sbs online classes</a></button>
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/playlist?list=PLEiEAq2VkUULCC3eEATL4zzuapTjmo1Z_">simplilearn</a></button>
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/@chaiaurcode">chai aur code</a></button>
+            </div>
+            <div class="button-group">
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/playlist?list=PLgWjD_CBfh0Bh9-CvRE1dIhxKsUpmx3Gj">Sbs online classes</a></button>
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/playlist?list=PLEiEAq2VkUULCC3eEATL4zzuapTjmo1Z_">simplilearn</a></button>
+                <button class="custom-button"><a class="btn-text" href="https://www.youtube.com/@chaiaurcode">chai aur code</a></button>
+            </div>
+        </div>
     </div>
+    
 </body>
 </html>
