@@ -16,40 +16,72 @@
         }
 
         .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center align items vertically */
-    align-items: center; /* Center align items horizontally */
-    }
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center align items vertically */
+            align-items: center; /* Center align items horizontally */
+        }
 
-.button-group {
-    display: flex;
-    flex-direction: row;
-    gap: 40px; /* Adjust the gap between buttons */
-    margin-top: 10px; /* Adjust the top margin */
-    padding: 35px;
-}
+        .button-group {
+            display: flex;
+            flex-direction: row;
+            gap: 40px; /* Adjust the gap between buttons */
+            margin-top: 10px; /* Adjust the top margin */
+            padding: 35px;
+        }
 
-.custom-button {
-    width: 590px; /* Adjust width and height as needed */
-    height: 180px;
-    background-image: url('./pngwing.com.png');
-    background-size: cover; /* or contain, depending on how you want the image to fit */
-    /* Other button styling */
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
+        .custom-button {
+            width: 590px; /* Adjust width and height as needed */
+            height: 180px;
+            background-image: url('./pngwing.com.png');
+            background-size: cover; /* or contain, depending on how you want the image to fit */
+            /* Other button styling */
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-.btn-text {
-    font-size: 25px;
-    letter-spacing: 2px; /* Adjust letter spacing for better readability */
-    text-transform: uppercase; /* Convert text to uppercase */
-    /* Add any other desired styles to make it attractive */
-}
+        .btn-text {
+            font-size: 25px;
+            letter-spacing: 2px; /* Adjust letter spacing for better readability */
+            text-transform: uppercase; /* Convert text to uppercase */
+            /* Add any other desired styles to make it attractive */
+        }
 
+        @media (max-width: 768px) {
+            .main-bg{
+                height: 100vh;
+                width: 100vw;
+            }
+            .main {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center;
+            }
 
+            .button-group {
+                flex-direction: column; /* Align buttons vertically */
+                gap: 20px; /* Adjust the gap between buttons */
+                padding: 10px; /* Adjust padding */
+            }
+
+            .custom-button {
+                width: 100%; /* Make buttons full width */
+                height: 150px; /* Adjusted height for smaller screens */
+                font-size: 16px; /* Adjusted font size for smaller screens */
+            }
+
+            .btn-text {
+                font-size: 20px; /* Adjusted font size for smaller screens */
+            }
+
+            .name{
+                font-size: 2rem;
+                display: flex; /* Make .name a flex container */
+                justify-content: center;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
